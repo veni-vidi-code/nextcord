@@ -54,28 +54,22 @@ packages = [
     'nextcord.ui',
     'nextcord.webhook',
     'nextcord.ext.commands',
-    'nextcord.ext.tasks',
-    
-    # Compat
-    "discord",
-    "discord.types",
-    "discord.ui",
-    "discord.webhook",
-    "discord.ext.commands",
-    "discord.ext.tasks"
+    'nextcord.ext.tasks'
 ]
 
-setup(name='nextcord',
+setup(name='nextcord-unaliased',
       author='tag-epic & Rapptz',
-      url='https://github.com/nextcord/nextcord',
+      url='https://github.com/veni-vidi-code/nextcord/tree/withoutalias',
       project_urls={
+        "Original Repository": "https://github.com/nextcord/nextcord",
+        "Original Package": "https://pypi.org/project/nextcord/",
         "Documentation": "https://nextcord.readthedocs.io/en/latest/",
         "Issue tracker": "https://github.com/nextcord/nextcord/issues",
       },
       version=version,
       packages=packages,
       license='MIT',
-      description='A Python wrapper for the Discord API forked from discord.py',
+      description='A Python wrapper for the Discord API forked from discord.py without the discord alias',
       long_description=readme,
       long_description_content_type="text/x-rst",
       include_package_data=True,

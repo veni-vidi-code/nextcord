@@ -24,16 +24,16 @@ Installing
 
 You can get the library directly from PyPI: ::
 
-    python3 -m pip install -U nextcord
+    python3 -m pip install -U nextcord-unaliased
 
 If you are using Windows, then the following should be used instead: ::
 
-    py -3 -m pip install -U nextcord
+    py -3 -m pip install -U nextcord-unaliased
 
 
 To get voice support, you should use ``nextcord[voice]`` instead of ``nextcord``, e.g. ::
 
-    python3 -m pip install -U nextcord[voice]
+    python3 -m pip install -U nextcord-unaliased[voice]
 
 On Linux environments, installing voice requires getting the following dependencies:
 
@@ -84,7 +84,7 @@ However, for the quick and dirty:
 
     .. code-block:: shell
 
-        $ pip install -U nextcord
+        $ pip install -U nextcord-unaliased
 
 Congratulations. You now have a virtual environment all set up.
 

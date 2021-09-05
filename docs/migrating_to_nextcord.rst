@@ -19,10 +19,10 @@ In order to port a bot using discord.py to nextcord, follow these steps:
     .. code:: sh
 
         # Linux/macOS
-        python3 -m pip install -U nextcord
+        python3 -m pip install -U nextcord-unaliased
 
         # Windows
-        py -3 -m pip install -U nextcord
+        py -3 -m pip install -U nextcord-unaliased
 
 2. Uninstall discord.py:
 
@@ -41,7 +41,7 @@ In order to port a bot using discord.py to nextcord, follow these steps:
 
 4. For all places in your code that used ``discord`` (embeds, colors, etc), change them to use ``nextcord``.
 
-    Note: Steps 3 and 4 are not entirely necessary and your code should still work, but is highly recommended.
+    Note: Steps 3 and 4 are not entirely necessary and your code should still work, but is highly recommended when using the original nextcord package. This fork however needs this changes
 
     For more information on migrations, view the rest of the migration documentation:
 
