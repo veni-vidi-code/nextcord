@@ -1,7 +1,7 @@
+import re
 import sys
 
 from setuptools import setup
-import re
 
 aliasing: bool = True
 
@@ -20,8 +20,6 @@ with open('nextcord/__init__.py') as f:
 
 if not version:
     raise RuntimeError('version is not set')
-
-
 
 if version.endswith(('a', 'b', 'rc')):
     # append version identifier based on commit count
@@ -60,7 +58,6 @@ extras_require = {
     ]
 }
 
-
 unaliasedpackages = [
     'nextcord',
     'nextcord.types',
@@ -73,6 +70,7 @@ packages = unaliasedpackages.copy()
 if aliasing:
     print("aliasing")
     import aliasgen
+
     aliasgen.createalias()
 
     for i in unaliasedpackages:
